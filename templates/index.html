@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porrama 5G Project</title>
+    <link rel="icon" href="../static/live-streaming.png">
+    <style>
+        .container {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: dimgray;
+            color: white;
+            text-align: center;
+            font-family: monospace;
+        } 
+        .button:hover {
+            background-color: lightgrey; /* Green */
+            color: black;
+        }
+    </style>
+</head>
+<body class="container">
+
+    <h2>Senior Project: 5G Simulation and Testing</h2>
+
+    <img src="../static/logoEEnewForWeb2.png" style="width: 300px;"> <br><br>
+
+    <script>
+    function video_stream() {
+        window.location="{{ url_for('video_stream') }}";
+    }
+    </script>
+    <button onclick="video_stream();" class="button"> Video Stream </button> <br>
+
+</body>
+</html>
